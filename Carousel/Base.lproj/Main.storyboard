@@ -21,6 +21,10 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1136"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile5" id="a6r-hO-Zwk">
+                                        <rect key="frame" x="-18" y="399" width="76" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile4" id="du7-VO-cQg">
                                         <rect key="frame" x="117" y="497" width="76" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
@@ -35,10 +39,6 @@
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile2" id="QB7-5e-QF4">
                                         <rect key="frame" x="244" y="492" width="76" height="76"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile5" id="a6r-hO-Zwk">
-                                        <rect key="frame" x="124" y="902" width="76" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile6" id="Fus-15-Z7c">
@@ -60,6 +60,7 @@
                         <outlet property="introTile2" destination="QB7-5e-QF4" id="hCb-ZW-3Sw"/>
                         <outlet property="introTile3" destination="AqI-oW-5tp" id="AYG-He-Y1q"/>
                         <outlet property="introTile4" destination="du7-VO-cQg" id="VnV-ez-jcy"/>
+                        <outlet property="introTile5" destination="a6r-hO-Zwk" id="dtH-lg-IK8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
