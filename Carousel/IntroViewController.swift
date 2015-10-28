@@ -11,6 +11,7 @@ import UIKit
 class IntroViewController: UIViewController, UIScrollViewDelegate {
 
     
+    @IBOutlet weak var introTile6: UIImageView!
     @IBOutlet weak var introTile5: UIImageView!
     @IBOutlet weak var introTile4: UIImageView!
     @IBOutlet weak var introTile3: UIImageView!
@@ -37,6 +38,22 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(scrollView: UIScrollView) {
         //introTile1.transform = CGAffineTransformMakeRotation(CGFloat(i++ * M_PI / 180))
         print(scrollView.contentOffset.y)
+        
+        
+        
+        introTile6.transform = CGAffineTransformMakeTranslation(
+            convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 0, r2Max: 70),
+            convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 0, r2Max: 470)
+        )
+        
+        introTile6.transform = CGAffineTransformScale(introTile6.transform, convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 1.6, r2Max: 1),
+            convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 1.6, r2Max: 1)
+        )
+        
+        introTile6.transform = CGAffineTransformRotate(introTile6.transform,CGFloat(Double(convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: -10, r2Max: 0))*M_PI/180)
+        )
+        
+        
         
         introTile5.transform = CGAffineTransformMakeTranslation(
             convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 0, r2Max: 142),
