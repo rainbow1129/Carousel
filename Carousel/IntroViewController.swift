@@ -31,7 +31,11 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewDidScroll(scrollView: UIScrollView) {
         introTile1.transform = CGAffineTransformMakeRotation(CGFloat(i++ * M_PI / 180))
         print(scrollView.contentOffset.y)
-        //introTile1.transform = CGAffineTransformMakeTranslation(<#T##tx: CGFloat##CGFloat#>, <#T##ty: CGFloat##CGFloat#>)
+        
+        introTile1.transform = CGAffineTransformMakeTranslation(
+            convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 0, r2Max: 77),
+            convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 0, r2Max: 288)
+        )
     }
 
     /*
