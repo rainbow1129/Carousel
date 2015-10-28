@@ -45,6 +45,13 @@
                                         <rect key="frame" x="244" y="492" width="76" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2SQ-qG-BFx">
+                                        <rect key="frame" x="15" y="1060" width="289" height="57"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <segue destination="ORf-yK-Hzi" kind="push" id="prm-ml-5lP"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -67,6 +74,27 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="543" y="343"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YlU-qq-93a">
+            <objects>
+                <viewController id="ORf-yK-Hzi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EcC-8u-N9E">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sign_in_nav_bar" id="u7f-yi-WIj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xnh-y4-qZR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j5W-YH-uY1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="343"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bI6-WC-cxq">
@@ -95,5 +123,6 @@
         <image name="intro_tile4" width="76" height="76"/>
         <image name="intro_tile5" width="76" height="75"/>
         <image name="intro_tile6" width="76" height="75"/>
+        <image name="sign_in_nav_bar" width="320" height="66"/>
     </resources>
 </document>
