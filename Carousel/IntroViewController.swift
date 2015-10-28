@@ -36,6 +36,8 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
             convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 0, r2Max: 77),
             convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 0, r2Max: 288)
         )
+        
+        introTile1.transform = CGAffineTransformRotate(introTile1.transform,CGFloat(Double(convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: -10, r2Max: 0))*M_PI/180))
     }
 
     /*
