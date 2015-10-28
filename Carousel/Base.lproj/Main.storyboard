@@ -56,6 +56,7 @@
                     <connections>
                         <outlet property="introImageView" destination="XTY-MW-4RK" id="TXV-PC-JnL"/>
                         <outlet property="introScrollView" destination="66N-co-7g8" id="G7k-DZ-iE1"/>
+                        <outlet property="introTile1" destination="J5F-LB-Ezc" id="2yf-cH-Iha"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
