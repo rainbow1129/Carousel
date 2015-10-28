@@ -11,6 +11,7 @@ import UIKit
 class IntroViewController: UIViewController, UIScrollViewDelegate {
 
     
+    @IBOutlet weak var introTile4: UIImageView!
     @IBOutlet weak var introTile3: UIImageView!
     @IBOutlet weak var introTile2: UIImageView!
     @IBOutlet weak var introTile1: UIImageView!
@@ -36,6 +37,19 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
         //introTile1.transform = CGAffineTransformMakeRotation(CGFloat(i++ * M_PI / 180))
         print(scrollView.contentOffset.y)
         
+        introTile4.transform = CGAffineTransformMakeTranslation(
+            convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 0, r2Max: -70),
+            convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 0, r2Max: 404)
+        )
+        
+        introTile4.transform = CGAffineTransformScale(introTile4.transform, convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 1.6, r2Max: 1),
+            convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 1.6, r2Max: 1)
+        )
+        
+        introTile4.transform = CGAffineTransformRotate(introTile4.transform,CGFloat(Double(convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 5, r2Max: 0))*M_PI/180)
+        )
+
+        
         
         introTile3.transform = CGAffineTransformMakeTranslation(
             convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 0, r2Max: 0),
@@ -50,6 +64,8 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
         )
 
         
+        
+        
         introTile2.transform = CGAffineTransformMakeTranslation(
             convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 0, r2Max: -43),
             convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 0, r2Max: 255)
@@ -61,6 +77,8 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
         
         introTile2.transform = CGAffineTransformRotate(introTile2.transform,CGFloat(Double(convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: -15, r2Max: 0))*M_PI/180)
         )
+        
+        
         
         introTile1.transform = CGAffineTransformMakeTranslation(
             convertValue(scrollView.contentOffset.y, r1Min: -20, r1Max: 568, r2Min: 0, r2Max: 77),
