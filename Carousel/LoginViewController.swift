@@ -10,7 +10,7 @@ import UIKit
 
 
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UIScrollViewDelegate {
    
 
     @IBOutlet weak var buttonParentView: UIView!
@@ -25,6 +25,8 @@ class LoginViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
         
         initialY = buttonParentView.frame.origin.y
+        
+        signinScrollView.delegate = self
         
         
         
@@ -52,6 +54,14 @@ class LoginViewController: UIViewController {
     }
     
     func keyboardWillHide(notification: NSNotification!) {
+    }
+    
+    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        if (signinScrollView.contentOffset.y < 90) {
+            view.endEditing(true)
+        }
+        
     }
   
     /*
