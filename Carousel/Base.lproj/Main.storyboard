@@ -147,6 +147,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="xnh-y4-qZR"/>
+                    <connections>
+                        <outlet property="buttonParentView" destination="7sr-WV-3BQ" id="qrG-Ye-Utx"/>
+                        <outlet property="signinScrollView" destination="V07-St-0Fp" id="Dg7-E2-jJe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5W-YH-uY1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

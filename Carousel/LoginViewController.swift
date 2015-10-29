@@ -8,10 +8,23 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
 
+
+class LoginViewController: UIViewController {
+   
+
+    @IBOutlet weak var buttonParentView: UIView!
+    @IBOutlet weak var signinScrollView: UIScrollView!
+    var initialY: CGFloat!
+    let offset: CGFloat = -230
     override func viewDidLoad() {
         super.viewDidLoad()
+        signinScrollView.contentSize = CGSize(width: 320, height: 600)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+        
+        initialY = buttonParentView.frame.origin.y
+        
 
         // Do any additional setup after loading the view.
     }
@@ -21,7 +34,14 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    func keyboardWillShow(notification: NSNotification!) {
+        self.buttonParentView.frame.origin = CGPoint(x: self.buttonParentView.frame.origin.x, y: self.initialY + self.offset)
+    }
+    
+    func keyboardWillHide(notification: NSNotification!) {
+    }
+  
     /*
     // MARK: - Navigation
 
