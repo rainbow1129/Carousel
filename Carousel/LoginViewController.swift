@@ -16,7 +16,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var buttonParentView: UIView!
     @IBOutlet weak var signinScrollView: UIScrollView!
     var initialY: CGFloat!
-    let offset: CGFloat = -230
+    let offset: CGFloat = -135
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         signinScrollView.contentSize = CGSize(width: 320, height: 600)
@@ -24,6 +25,8 @@ class LoginViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
         
         initialY = buttonParentView.frame.origin.y
+        
+        
         
 
         // Do any additional setup after loading the view.
@@ -36,7 +39,13 @@ class LoginViewController: UIViewController {
     
     
     func keyboardWillShow(notification: NSNotification!) {
+        let maxContentOffsetY = signinScrollView.contentSize.height - signinScrollView.frame.size.height
+        
+        signinScrollView.contentOffset.y = maxContentOffsetY
+        
         self.buttonParentView.frame.origin = CGPoint(x: self.buttonParentView.frame.origin.x, y: self.initialY + self.offset)
+        
+       
     }
     
     func keyboardWillHide(notification: NSNotification!) {
