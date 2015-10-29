@@ -16,6 +16,7 @@
 		D6B9E7AF1BE0AF3800ABB126 /* CarouselUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B9E7AE1BE0AF3800ABB126 /* CarouselUITests.swift */; };
 		D6B9E7BD1BE0B06D00ABB126 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B9E7BC1BE0B06D00ABB126 /* Common.swift */; };
 		D6B9E7BF1BE0B08B00ABB126 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B9E7BE1BE0B08B00ABB126 /* IntroViewController.swift */; };
+		D6B9E7C11BE1E17700ABB126 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B9E7C01BE1E17700ABB126 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D6B9E7B01BE0AF3800ABB126 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6B9E7BC1BE0B06D00ABB126 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		D6B9E7BE1BE0B08B00ABB126 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		D6B9E7C01BE1E17700ABB126 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				D6B9E7901BE0AF3800ABB126 /* ViewController.swift */,
 				D6B9E7BC1BE0B06D00ABB126 /* Common.swift */,
 				D6B9E7921BE0AF3800ABB126 /* Main.storyboard */,
+				D6B9E7C01BE1E17700ABB126 /* LoginViewController.swift */,
 				D6B9E7BE1BE0B08B00ABB126 /* IntroViewController.swift */,
 				D6B9E7951BE0AF3800ABB126 /* Assets.xcassets */,
 				D6B9E7971BE0AF3800ABB126 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 				D6B9E7911BE0AF3800ABB126 /* ViewController.swift in Sources */,
 				D6B9E7BD1BE0B06D00ABB126 /* Common.swift in Sources */,
 				D6B9E78F1BE0AF3800ABB126 /* AppDelegate.swift in Sources */,
+				D6B9E7C11BE1E17700ABB126 /* LoginViewController.swift in Sources */,
 				D6B9E7BF1BE0B08B00ABB126 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
