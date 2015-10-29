@@ -48,18 +48,27 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         
         signinScrollView.contentOffset.y = maxContentOffsetY
         
-        self.buttonParentView.frame.origin = CGPoint(x: self.buttonParentView.frame.origin.x, y: self.initialY + self.offset)
+        //self.buttonParentView.frame.origin = CGPoint(x: self.buttonParentView.frame.origin.x, y: self.initialY + self.offset)
+        buttonParentView.transform = CGAffineTransformMakeTranslation(0, offset)
+        signinScrollView.scrollEnabled = true
         
        
     }
     
     func keyboardWillHide(notification: NSNotification!) {
+        
+        
+        //buttonParentView.transform = CGAffineTransformMakeTranslation(self.buttonParentView.frame.origin.x, self.buttonParentView.frame.origin.y)
+        buttonParentView.transform = CGAffineTransformIdentity
+        signinScrollView.contentOffset.y = 0
+        signinScrollView.scrollEnabled = false
     }
     
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
         if (signinScrollView.contentOffset.y < 90) {
             view.endEditing(true)
+            
         }
         
     }
