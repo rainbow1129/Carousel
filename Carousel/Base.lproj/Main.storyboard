@@ -90,6 +90,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="E2S-4c-MMa">
                                 <rect key="frame" x="0.0" y="20" width="57" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="signinBackButton:" destination="ORf-yK-Hzi" eventType="touchUpInside" id="eTO-rC-63C"/>
+                                </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="V07-St-0Fp">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>

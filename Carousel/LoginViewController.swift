@@ -37,6 +37,9 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func signinBackButton(sender: AnyObject) {
+        navigationController!.popToRootViewControllerAnimated(true)
+    }
     
     func keyboardWillShow(notification: NSNotification!) {
         let maxContentOffsetY = signinScrollView.contentSize.height - signinScrollView.frame.size.height
