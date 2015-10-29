@@ -109,14 +109,21 @@
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" id="iJC-bS-X7e">
                                                 <rect key="frame" x="20" y="27" width="281" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=""/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="editingChanged:" destination="ORf-yK-Hzi" eventType="editingChanged" id="7Pl-Iu-tMY"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="t5K-kM-UXJ">
                                                 <rect key="frame" x="20" y="72" width="281" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="editingChanged:" destination="ORf-yK-Hzi" eventType="editingChanged" id="ALQ-e0-vJ0"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -132,6 +139,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Shx-kP-F8R">
                                                 <rect key="frame" x="20" y="13" width="280" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="signinButton:" destination="ORf-yK-Hzi" eventType="touchUpInside" id="8r9-OK-UJl"/>
+                                                </connections>
                                             </button>
                                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" id="JAv-WY-Lb7">
                                                 <rect key="frame" x="150" y="28" width="20" height="20"/>
@@ -152,6 +162,8 @@
                     <navigationItem key="navigationItem" id="xnh-y4-qZR"/>
                     <connections>
                         <outlet property="buttonParentView" destination="7sr-WV-3BQ" id="qrG-Ye-Utx"/>
+                        <outlet property="emailField" destination="iJC-bS-X7e" id="V2j-kb-VbX"/>
+                        <outlet property="passwordField" destination="t5K-kM-UXJ" id="iCE-hM-IkR"/>
                         <outlet property="signinScrollView" destination="V07-St-0Fp" id="Dg7-E2-jJe"/>
                     </connections>
                 </viewController>

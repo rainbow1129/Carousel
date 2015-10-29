@@ -13,6 +13,8 @@ import UIKit
 class LoginViewController: UIViewController, UIScrollViewDelegate {
    
 
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var buttonParentView: UIView!
     @IBOutlet weak var signinScrollView: UIScrollView!
     var initialY: CGFloat!
@@ -73,6 +75,25 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         
     }
   
+    @IBAction func signinButton(sender: AnyObject) {
+        
+        delay(0) { () -> () in
+        }
+        
+        if (emailField.text!.isEmpty || passwordField.text!.isEmpty){
+        let alertController = UIAlertController(title: "Email Required", message: "Please enter your email address", preferredStyle: .Alert)
+            
+            presentViewController(alertController, animated: true, completion: nil)
+        
+        
+        }
+    }
+    
+    
+    
+   
+    
+   
     /*
     // MARK: - Navigation
 
