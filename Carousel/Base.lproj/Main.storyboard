@@ -113,7 +113,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
-                                                    <action selector="editingChanged:" destination="ORf-yK-Hzi" eventType="editingChanged" id="7Pl-Iu-tMY"/>
+                                                    <action selector="editingChanged:" destination="ORf-yK-Hzi" eventType="editingChanged" id="uVx-DR-fVo"/>
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="t5K-kM-UXJ">
@@ -122,7 +122,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
-                                                    <action selector="editingChanged:" destination="ORf-yK-Hzi" eventType="editingChanged" id="ALQ-e0-vJ0"/>
+                                                    <action selector="editingChanged:" destination="ORf-yK-Hzi" eventType="editingChanged" id="eSS-ou-pov"/>
                                                 </connections>
                                             </textField>
                                         </subviews>
@@ -164,6 +164,7 @@
                         <outlet property="buttonParentView" destination="7sr-WV-3BQ" id="qrG-Ye-Utx"/>
                         <outlet property="emailField" destination="iJC-bS-X7e" id="V2j-kb-VbX"/>
                         <outlet property="passwordField" destination="t5K-kM-UXJ" id="iCE-hM-IkR"/>
+                        <outlet property="signInButton" destination="Shx-kP-F8R" id="M1Z-JP-pZN"/>
                         <outlet property="signinScrollView" destination="V07-St-0Fp" id="Dg7-E2-jJe"/>
                     </connections>
                 </viewController>

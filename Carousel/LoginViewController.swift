@@ -36,6 +36,10 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         // Do any additional setup after loading the view.
     }
 
+
+    
+    @IBOutlet weak var signInButton: UIButton!
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -57,6 +61,19 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
        
     }
     
+    
+    @IBAction func editingChanged(sender: AnyObject) {
+        // Un-comment these if we want to enable sign in button only when both field is not
+        // empty.
+        /*
+        if (emailField.text!.isEmpty || passwordField.text!.isEmpty) {
+            signInButton.enabled = false
+        } else {
+            signInButton.enabled = true
+        }
+        */
+    }
+    
     func keyboardWillHide(notification: NSNotification!) {
         
         
@@ -75,6 +92,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         
     }
   
+
     @IBAction func signinButton(sender: AnyObject) {
         
         delay(0) { () -> () in
