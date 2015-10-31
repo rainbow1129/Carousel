@@ -13,6 +13,7 @@ import UIKit
 class LoginViewController: UIViewController, UIScrollViewDelegate {
    
 
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var signinNavigationBar: UIImageView!
     @IBOutlet weak var loginTextView: UIImageView!
     @IBOutlet weak var fieldParentView: UIView!
@@ -133,6 +134,11 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
             
         presentViewController(alertController, animated: true, completion: nil)
         
+        }
+        
+        else
+            
+        {self.activityIndicator.startAnimating()
         
         }
     }

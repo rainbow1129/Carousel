@@ -144,7 +144,7 @@
                                                 </connections>
                                             </button>
                                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="JAv-WY-Lb7">
-                                                <rect key="frame" x="142" y="19" width="37" height="37"/>
+                                                <rect key="frame" x="248" y="19" width="37" height="37"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </activityIndicatorView>
                                         </subviews>
@@ -161,6 +161,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="xnh-y4-qZR"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="JAv-WY-Lb7" id="aLe-sg-iFx"/>
                         <outlet property="buttonParentView" destination="7sr-WV-3BQ" id="qrG-Ye-Utx"/>
                         <outlet property="emailField" destination="iJC-bS-X7e" id="V2j-kb-VbX"/>
                         <outlet property="fieldParentView" destination="nLU-hw-RXZ" id="axe-We-xIU"/>
