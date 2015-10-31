@@ -13,6 +13,9 @@ import UIKit
 class LoginViewController: UIViewController, UIScrollViewDelegate {
    
 
+    @IBOutlet weak var signinNavigationBar: UIImageView!
+    @IBOutlet weak var loginTextView: UIImageView!
+    @IBOutlet weak var fieldParentView: UIView!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var buttonParentView: UIView!
@@ -37,6 +40,28 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     }
 
 
+    override func viewWillAppear(animated: Bool) {
+        let transform = CGAffineTransformMakeScale(0.5, 0.5)
+        signinNavigationBar.transform = transform
+        fieldParentView.transform = transform
+        loginTextView.transform = transform
+        signinNavigationBar.alpha = 0
+        fieldParentView.alpha = 0
+        loginTextView.alpha = 0
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(0.1) { () -> Void in
+        
+        self.signinNavigationBar.transform = CGAffineTransformIdentity
+        self.fieldParentView.transform = CGAffineTransformIdentity
+        self.loginTextView.transform = CGAffineTransformIdentity
+        self.signinNavigationBar.alpha = 1
+        self.fieldParentView.alpha = 1
+        self.loginTextView.alpha = 1
+            }
+    }
     
     @IBOutlet weak var signInButton: UIButton!
     

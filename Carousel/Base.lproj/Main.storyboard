@@ -13,7 +13,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="66N-co-7g8">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="66N-co-7g8">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
@@ -163,8 +163,11 @@
                     <connections>
                         <outlet property="buttonParentView" destination="7sr-WV-3BQ" id="qrG-Ye-Utx"/>
                         <outlet property="emailField" destination="iJC-bS-X7e" id="V2j-kb-VbX"/>
+                        <outlet property="fieldParentView" destination="nLU-hw-RXZ" id="axe-We-xIU"/>
+                        <outlet property="loginTextView" destination="GuM-oJ-NF9" id="7VJ-XQ-M7O"/>
                         <outlet property="passwordField" destination="t5K-kM-UXJ" id="iCE-hM-IkR"/>
                         <outlet property="signInButton" destination="Shx-kP-F8R" id="M1Z-JP-pZN"/>
+                        <outlet property="signinNavigationBar" destination="u7f-yi-WIj" id="g0d-uO-rHL"/>
                         <outlet property="signinScrollView" destination="V07-St-0Fp" id="Dg7-E2-jJe"/>
                     </connections>
                 </viewController>
