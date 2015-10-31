@@ -125,8 +125,13 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         
         if (emailField.text!.isEmpty || passwordField.text!.isEmpty){
         let alertController = UIAlertController(title: "Email Required", message: "Please enter your email address", preferredStyle: .Alert)
+        
+        let cancelAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
+            }
+          
+        alertController.addAction(cancelAction)
             
-            presentViewController(alertController, animated: true, completion: nil)
+        presentViewController(alertController, animated: true, completion: nil)
         
         
         }

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Carousel/LoginViewController.swift"
-            timestampString = "468021910.190643"
+            timestampString = "468022543.178902"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "LoginViewController"
             landmarkType = "3">
          </BreakpointContent>

@@ -143,8 +143,8 @@
                                                     <action selector="signinButton:" destination="ORf-yK-Hzi" eventType="touchUpInside" id="8r9-OK-UJl"/>
                                                 </connections>
                                             </button>
-                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" id="JAv-WY-Lb7">
-                                                <rect key="frame" x="150" y="28" width="20" height="20"/>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" id="JAv-WY-Lb7">
+                                                <rect key="frame" x="142" y="19" width="37" height="37"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </activityIndicatorView>
                                         </subviews>
