@@ -121,26 +121,33 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
 
     @IBAction func signinButton(sender: AnyObject) {
         
-        delay(0) { () -> () in
-        }
-        
         if (emailField.text!.isEmpty || passwordField.text!.isEmpty){
         let alertController = UIAlertController(title: "Email Required", message: "Please enter your email address", preferredStyle: .Alert)
         
         let cancelAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
             }
-          
         alertController.addAction(cancelAction)
-            
         presentViewController(alertController, animated: true, completion: nil)
-        
+        }else{
+            self.activityIndicator.startAnimating()
+            delay(2) {
+                if self.emailField.text == "haihong@fb.com" && self.passwordField.text == "0000" {
+                    self.activityIndicator.stopAnimating()
+                    self.performSegueWithIdentifier("signinSegue", sender: nil)
+                    
+                }else{
+                
+                    let alertController = UIAlertController(title: "Invalid Email or Password", message: "Please enter valid Email and Password", preferredStyle: .Alert)
+                    let cancelAction = UIAlertAction(title: "OK", style: .Cancel) {(action) in
+                    }
+                    alertController.addAction(cancelAction)
+                    self.presentViewController(alertController, animated: true){
+                        self.activityIndicator.stopAnimating()
+                    }
+                }
+            }
         }
         
-        else
-            
-        {self.activityIndicator.startAnimating()
-        
-        }
     }
     
     

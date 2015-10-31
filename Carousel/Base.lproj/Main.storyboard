@@ -120,7 +120,7 @@
                                                 <rect key="frame" x="20" y="72" width="281" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 <connections>
                                                     <action selector="editingChanged:" destination="ORf-yK-Hzi" eventType="editingChanged" id="eSS-ou-pov"/>
                                                 </connections>
@@ -170,11 +170,26 @@
                         <outlet property="signInButton" destination="Shx-kP-F8R" id="M1Z-JP-pZN"/>
                         <outlet property="signinNavigationBar" destination="u7f-yi-WIj" id="g0d-uO-rHL"/>
                         <outlet property="signinScrollView" destination="V07-St-0Fp" id="Dg7-E2-jJe"/>
+                        <segue destination="Box-bG-8kA" kind="modal" identifier="signinSegue" animates="NO" id="q1f-jq-roa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j5W-YH-uY1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="922" y="343"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="e29-ig-N68">
+            <objects>
+                <viewController id="Box-bG-8kA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rvb-9d-FTK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="huX-zD-aH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1298" y="343"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bI6-WC-cxq">
