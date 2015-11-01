@@ -25,5 +25,5 @@ Completed user stories:
   - User can dismiss the settings screen.
   - [Optional]Give user options to Signout or Cancel from Actionsheet after user tapping on the Sign out button.
   
-  Walkthrough:
-  ![alt Walkthrough](https://github.com/rainbow1129/Carousel/blob/master/carousel.gif)
+Walkthrough:
+![alt Walkthrough](https://github.com/rainbow1129/Carousel/blob/master/carousel.gif)
