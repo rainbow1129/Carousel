@@ -27,8 +27,23 @@ class SettingsViewController: UIViewController, UIScrollViewDelegate {
     
     
     @IBAction func didPressClose(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+       dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    @IBAction func didPressSignoutButton(sender: AnyObject) {
+        let alertController = UIAlertController(title: "", message: "Are you sure you want to sign out?", preferredStyle: .ActionSheet)
+        let signoutAction = UIAlertAction(title: "Sign Out", style: .Destructive) { (action) in
+            self.performSegueWithIdentifier("signoutSegue", sender: self)
+        }
+        alertController.addAction(signoutAction)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
+        }
+        alertController.addAction(cancelAction)
+        presentViewController(alertController, animated: true){
+        }
+    }
+    
 
     /*
     // MARK: - Navigation
