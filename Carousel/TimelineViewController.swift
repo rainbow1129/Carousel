@@ -8,10 +8,14 @@
 
 import UIKit
 
-class TimelineViewController: UIViewController {
+class TimelineViewController: UIViewController, UIScrollViewDelegate {
 
+    @IBOutlet weak var feedScrollView: UIScrollView!
+    @IBOutlet weak var feedImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        feedScrollView.delegate = self
+       feedScrollView.contentSize = CGSize(width: feedImage.image!.size.width, height: feedImage.image!.size.height + 49)
 
         // Do any additional setup after loading the view.
     }
