@@ -20,6 +20,30 @@ class IntroViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var introScrollView: UIScrollView!
     @IBOutlet weak var introImageView: UIImageView!
     //var i = 0.0
+    override func viewWillAppear(animated: Bool) {
+        introTile6.alpha = 0
+        introTile5.alpha = 0
+        introTile4.alpha = 0
+        introTile3.alpha = 0
+        introTile2.alpha = 0
+        introTile1.alpha = 0
+        introImageView.alpha = 0
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        UIView.animateWithDuration(0.2) { () -> Void in
+            self.introTile6.alpha = 1
+            self.introTile5.alpha = 1
+            self.introTile4.alpha = 1
+            self.introTile3.alpha = 1
+            self.introTile2.alpha = 1
+            self.introTile1.alpha = 1
+            self.introImageView.alpha = 1
+            
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         introScrollView.contentSize = introImageView.image!.size

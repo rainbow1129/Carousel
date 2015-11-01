@@ -10,6 +10,8 @@ import UIKit
 
 class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     
+    @IBOutlet weak var backupSwitch: UISwitch!
+    @IBOutlet weak var CarouselButton: UIImageView!
     
     @IBOutlet weak var welcomeFirstImage: UIImageView!
     @IBOutlet weak var welcomePageControl: UIPageControl!
@@ -17,6 +19,7 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewWillAppear(animated: Bool) {
         welcomeFirstImage.alpha = 0
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -27,8 +30,11 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        CarouselButton.alpha = 0
+        backupSwitch.alpha = 0
         welcomeScrollView.delegate = self
         welcomeScrollView.contentSize = CGSize(width: 1280, height: 568)
+        
 
         // Do any additional setup after loading the view.
     }
@@ -39,9 +45,21 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        var page : Int = Int(round(scrollView.contentOffset.x / 320))
+        var page: Int = Int(round(scrollView.contentOffset.x / 320))
         welcomePageControl.currentPage = page
-        
+        if (page == 3) {
+            welcomePageControl.hidden = true
+            UIView.animateWithDuration(0.1) { () -> Void in
+                self.CarouselButton.alpha = 1
+                self.backupSwitch.alpha = 1
+            }
+        } else {
+            self.welcomePageControl.hidden = false
+            self.CarouselButton.alpha = 0
+            self.backupSwitch.alpha = 0
+        }
+
+    
     }
 
     /*

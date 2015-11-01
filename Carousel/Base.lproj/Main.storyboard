@@ -209,10 +209,6 @@
                                         <rect key="frame" x="960" y="450" width="320" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="NGF-JA-xQb">
-                                        <rect key="frame" x="1210" y="446" width="51" height="31"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </switch>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kww-Dc-R2V">
                                         <rect key="frame" x="980" y="490" width="280" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -220,6 +216,10 @@
                                             <segue destination="yty-xP-59c" kind="modal" animates="NO" id="Sgh-Tw-nHG"/>
                                         </connections>
                                     </button>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="NGF-JA-xQb">
+                                        <rect key="frame" x="1210" y="446" width="51" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </switch>
                                 </subviews>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="gul-jl-LmB">
@@ -234,6 +234,8 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
                     <connections>
+                        <outlet property="CarouselButton" destination="0vc-87-Tgt" id="j8Y-Dz-hnn"/>
+                        <outlet property="backupSwitch" destination="NGF-JA-xQb" id="qgP-H2-Gqx"/>
                         <outlet property="welcomeFirstImage" destination="j0N-7H-SJV" id="mY2-vr-Bop"/>
                         <outlet property="welcomePageControl" destination="gul-jl-LmB" id="z6g-Ot-i8e"/>
                         <outlet property="welcomeScrollView" destination="kcg-dU-Dbv" id="7BE-SI-skd"/>
